@@ -2,10 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from datetime import datetime, timedelta
 import json
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
+from flask import render_template
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -197,3 +194,4 @@ def get_today_schedule():
 if __name__ == '__main__':
 
     app.run(debug=True, port=5000)
+
