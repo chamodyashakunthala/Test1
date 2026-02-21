@@ -2,10 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from datetime import datetime, timedelta
 import json
-from flask import render_template
-@app.route("/")
-def home():
-    return render_template("index.html")
+
 app = Flask(__name__)
 CORS(app)
 
